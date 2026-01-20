@@ -5,9 +5,13 @@ use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\OrderController;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 use App\Http\Controllers\TransactionController;
 >>>>>>> 4c11faf (first comm)
+=======
+use App\Http\Controllers\TransactionController;
+>>>>>>> 4c11faf2aa747796b3f8d69bd93de3cddd12f5ff
 
 // ========================================
 // LANDING PAGE
@@ -49,7 +53,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/order-success', [OrderController::class, 'success'])->name('order.success');
 });
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 4c11faf2aa747796b3f8d69bd93de3cddd12f5ff
 
 // ========================================
 // TRANSACTION ROUTES
@@ -69,4 +76,7 @@ Route::middleware(['auth', 'role:admin_kantin'])->group(function () {
     // Cancel pesanan (customer dan admin_kantin bisa akses, ada policy check di controller)
     Route::patch('/{transaction}/cancel', [TransactionController::class, 'cancel'])->name('cancel');
 });
+<<<<<<< HEAD
 >>>>>>> 4c11faf (first comm)
+=======
+>>>>>>> 4c11faf2aa747796b3f8d69bd93de3cddd12f5ff

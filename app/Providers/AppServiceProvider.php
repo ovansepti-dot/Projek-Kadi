@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -22,6 +23,8 @@ class AppServiceProvider extends ServiceProvider
     {
         //
 =======
+=======
+>>>>>>> 4c11faf2aa747796b3f8d69bd93de3cddd12f5ff
 use App\Models\Transaction;
 use App\Policies\TransactionPolicy;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -41,6 +44,9 @@ class AuthServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerPolicies();
+<<<<<<< HEAD
 >>>>>>> 4c11faf (first comm)
+=======
+>>>>>>> 4c11faf2aa747796b3f8d69bd93de3cddd12f5ff
     }
 }
